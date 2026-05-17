@@ -7,7 +7,7 @@ const allProducts = [
     phone: "iPhone 13",
     price: 449,
     originalPrice: 699,
-    image: "https://images.unsplash.com/photo-1601593346740-925612772716?w=400",
+    image: "https://i.ibb.co/23TD2Zgj",
     tag: "🔥 Bestseller"
   },
   {
@@ -16,7 +16,7 @@ const allProducts = [
     phone: "Samsung Galaxy",
     price: 299,
     originalPrice: 499,
-    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400",
+    image: "https://i.ibb.co/VWq79d1W",
     tag: "😍 Fan Favourite"
   },
   {
@@ -25,7 +25,7 @@ const allProducts = [
     phone: "Oppo K13 5G",
     price: 349,
     originalPrice: 549,
-    image: "https://images.unsplash.com/photo-1609252925602-e8f6982d8b20?w=400",
+    image: "https://i.ibb.co/jPQSNQnp",
     tag: "✨ Trending"
   },
   {
@@ -34,7 +34,7 @@ const allProducts = [
     phone: "Samsung Galaxy M30S",
     price: 349,
     originalPrice: 549,
-    image: "https://images.unsplash.com/photo-1601593346740-925612772716?w=400",
+    image: "https://i.ibb.co/ZzL2F2WK",
     tag: "💪 Full Protection"
   },
 ]
