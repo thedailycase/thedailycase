@@ -13,7 +13,7 @@ function Cart() {
     }
 
     const options = {
-      key: 'rzp_live_SqJTtMKLH8T',
+      key: 'rzp_live_SqJTtMKLH8TM9t',
       amount: 29900,
       currency: 'INR',
       name: 'TheDailyCase',
