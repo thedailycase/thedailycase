@@ -8,16 +8,16 @@ const featuredProducts = [
     phone: "iPhone 13 / 14 / 15",
     price: 449,
     originalPrice: 699,
-    image: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/b/b/4/bow-iphone-13-bow-iphone13-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
     tag: "🔥 Bestseller"
   },
   {
     id: 2,
-    name: "Floral Garden Case",
+    name: "Floral Aesthetic Case",
     phone: "iPhone 12 / 13 / 14",
     price: 399,
     originalPrice: 599,
-    image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/d/g/q/floral-iphone-13-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
     tag: "🌸 Girls Favourite"
   },
   {
@@ -26,7 +26,7 @@ const featuredProducts = [
     phone: "Samsung Galaxy S23 / S24",
     price: 349,
     originalPrice: 549,
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/z/t/p/matte-samsung-s23-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
     tag: "💪 Heavy Duty"
   },
   {
@@ -35,7 +35,7 @@ const featuredProducts = [
     phone: "Samsung Galaxy A54 / A55",
     price: 299,
     originalPrice: 499,
-    image: "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=400",
+    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/p/z/r/marble-samsung-a54-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
     tag: "✨ Trending"
   },
 ]
