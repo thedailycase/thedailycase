@@ -1,30 +1,110 @@
+import { useState } from 'react'
+
 function Cart() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [address, setAddress] = useState('')
+
+  const handlePayment = () => {
+    if (!name || !email || !phone || !address) {
+      alert('Please fill all details!')
+      return
+    }
+
+    const options = {
+      key: 'rzp_live_SqJTtMKLH8T',
+      amount: 19900,
+      currency: 'INR',
+      name: 'TheDailyCase',
+      description: 'Phone Cover Order',
+      handler: function (response) {
+        alert('Payment Successful! Order placed! 🎉')
+      },
+      prefill: {
+        name: name,
+        email: email,
+        contact: phone,
+      },
+      theme: {
+        color: '#c9a227',
+      },
+    }
+
+    const razor = new window.Razorpay(options)
+    razor.open()
+  }
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen" style={{background: '#0a0a0a'}}>
 
       {/* Header */}
-      <div className="bg-white shadow-sm py-8 text-center">
-        <h1 className="text-3xl font-bold text-gray-800">🛒 Your Cart</h1>
+      <div style={{background: '#111', borderBottom: '1px solid #222'}} className="py-8 text-center">
+        <h1 style={{fontFamily: 'Playfair Display, serif'}} className="text-3xl font-bold text-white">
+          🛒 Your Cart
+        </h1>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-lg mx-auto px-4 py-12">
 
-        {/* Empty Cart */}
-        <div className="text-center py-20">
-          <p className="text-6xl mb-4">🛒</p>
-          <h2 className="text-2xl font-bold text-gray-700 mb-2">Your cart is empty!</h2>
-          <p className="text-gray-400 mb-8">Add some awesome phone covers to your cart!</p>
-          <a href="/products">
-            <button className="bg-pink-500 text-white px-8 py-3 rounded-full text-lg hover:bg-pink-600 transition-colors">
-              Shop Now →
-            </button>
-          </a>
-        </div>
+        {/* Order Form */}
+        <div style={{background: '#1a1a1a', border: '1px solid #333'}} className="rounded-2xl p-8">
+          <h2 style={{fontFamily: 'Playfair Display, serif'}} className="text-xl font-bold text-white mb-6">
+            Enter Delivery Details
+          </h2>
 
-      </div>
+          <div className="space-y-4">
+            <input
+              type="text"
+              placeholder="Your Full Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              style={{background: '#111', border: '1px solid #333', color: 'white'}}
+              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              style={{background: '#111', border: '1px solid #333', color: 'white'}}
+              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+            />
+            <input
+              type="tel"
+              placeholder="Your Phone Number"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              style={{background: '#111', border: '1px solid #333', color: 'white'}}
+              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+            />
+            <textarea
+              placeholder="Full Delivery Address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              rows={3}
+              style={{background: '#111', border: '1px solid #333', color: 'white'}}
+              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+            />
+          </div>
 
-    </div>
-  )
-}
+          {/* Order Summary */}
+          <div style={{borderTop: '1px solid #333'}} className="mt-6 pt-6">
+            <div className="flex justify-between text-gray-400 mb-2">
+              <span>Product</span>
+              <span>₹199</span>
+            </div>
+            <div className="flex justify-between text-gray-400 mb-2">
+              <span>Delivery</span>
+              <span className="text-green-400">FREE</span>
+            </div>
+            <div style={{borderTop: '1px solid #333'}} className="flex justify-between text-white font-bold text-lg mt-4 pt-4">
+              <span>Total</span>
+              <span style={{color: '#c9a227'}}>₹199</span>
+            </div>
+          </div>
 
-export default Cart
+          <button
+            onClick={handlePayment}
+            style={{background: 'linear-gradient(135deg, #c9a227, #f0d060)'}}
+            className="w-full mt-6 text-black font-bold py-4 rounded-full text-lg hover:opacity-90 transition-al
