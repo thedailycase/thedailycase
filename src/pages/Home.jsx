@@ -8,35 +8,35 @@ const featuredProducts = [
     phone: "iPhone 13 / 14 / 15",
     price: 449,
     originalPrice: 699,
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/b/b/4/bow-iphone-13-bow-iphone13-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
+    image: "https://m.media-amazon.com/images/I/71Q5KCQBQ6L._AC_SX466_.jpg",
     tag: "🔥 Bestseller"
   },
   {
     id: 2,
-    name: "Floral Aesthetic Case",
-    phone: "iPhone 12 / 13 / 14",
-    price: 399,
-    originalPrice: 599,
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/d/g/q/floral-iphone-13-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
-    tag: "🌸 Girls Favourite"
+    name: "Tom & Jerry Cartoon Case",
+    phone: "Samsung Galaxy S23 / S24",
+    price: 299,
+    originalPrice: 499,
+    image: "https://m.media-amazon.com/images/I/71tpj2KVOSL._AC_SX466_.jpg",
+    tag: "😍 Fan Favourite"
   },
   {
     id: 3,
-    name: "Matte Black Armour Case",
-    phone: "Samsung Galaxy S23 / S24",
+    name: "Coffee Cartoon 3D Case",
+    phone: "iPhone 14 / 15 Pro",
     price: 349,
     originalPrice: 549,
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/z/t/p/matte-samsung-s23-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
-    tag: "💪 Heavy Duty"
+    image: "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SX466_.jpg",
+    tag: "✨ Trending"
   },
   {
     id: 4,
-    name: "Aesthetic Marble Case",
-    phone: "Samsung Galaxy A54 / A55",
+    name: "Cute Aesthetic Floral Case",
+    phone: "iPhone & Samsung All Models",
     price: 299,
     originalPrice: 499,
-    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/cases-covers/back-cover/p/z/r/marble-samsung-a54-sscase-original-imagpghbzzmzfhxn.jpeg?q=70",
-    tag: "✨ Trending"
+    image: "https://m.media-amazon.com/images/I/71Q5KCQBQ6L._AC_SX466_.jpg",
+    tag: "🌸 Girls Special"
   },
 ]
 

@@ -14,12 +14,12 @@ function Cart() {
 
     const options = {
       key: 'rzp_live_SqJTtMKLH8T',
-      amount: 19900,
+      amount: 29900,
       currency: 'INR',
       name: 'TheDailyCase',
       description: 'Phone Cover Order',
       handler: function (response) {
-        alert('Payment Successful! Order placed! 🎉')
+        alert('Payment Successful! Order placed!')
       },
       prefill: {
         name: name,
@@ -37,17 +37,13 @@ function Cart() {
 
   return (
     <div className="min-h-screen" style={{background: '#0a0a0a'}}>
-
-      {/* Header */}
       <div style={{background: '#111', borderBottom: '1px solid #222'}} className="py-8 text-center">
         <h1 style={{fontFamily: 'Playfair Display, serif'}} className="text-3xl font-bold text-white">
-          🛒 Your Cart
+          Your Cart
         </h1>
       </div>
 
       <div className="max-w-lg mx-auto px-4 py-12">
-
-        {/* Order Form */}
         <div style={{background: '#1a1a1a', border: '1px solid #333'}} className="rounded-2xl p-8">
           <h2 style={{fontFamily: 'Playfair Display, serif'}} className="text-xl font-bold text-white mb-6">
             Enter Delivery Details
@@ -60,7 +56,7 @@ function Cart() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               style={{background: '#111', border: '1px solid #333', color: 'white'}}
-              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-3 rounded-xl focus:outline-none"
             />
             <input
               type="email"
@@ -68,7 +64,7 @@ function Cart() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               style={{background: '#111', border: '1px solid #333', color: 'white'}}
-              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-3 rounded-xl focus:outline-none"
             />
             <input
               type="tel"
@@ -76,7 +72,7 @@ function Cart() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               style={{background: '#111', border: '1px solid #333', color: 'white'}}
-              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-3 rounded-xl focus:outline-none"
             />
             <textarea
               placeholder="Full Delivery Address"
@@ -84,15 +80,14 @@ function Cart() {
               onChange={(e) => setAddress(e.target.value)}
               rows={3}
               style={{background: '#111', border: '1px solid #333', color: 'white'}}
-              className="w-full px-4 py-3 rounded-xl focus:outline-none focus:border-yellow-400"
+              className="w-full px-4 py-3 rounded-xl focus:outline-none"
             />
           </div>
 
-          {/* Order Summary */}
           <div style={{borderTop: '1px solid #333'}} className="mt-6 pt-6">
             <div className="flex justify-between text-gray-400 mb-2">
               <span>Product</span>
-              <span>₹199</span>
+              <span>₹299</span>
             </div>
             <div className="flex justify-between text-gray-400 mb-2">
               <span>Delivery</span>
@@ -100,11 +95,21 @@ function Cart() {
             </div>
             <div style={{borderTop: '1px solid #333'}} className="flex justify-between text-white font-bold text-lg mt-4 pt-4">
               <span>Total</span>
-              <span style={{color: '#c9a227'}}>₹199</span>
+              <span style={{color: '#c9a227'}}>₹299</span>
             </div>
           </div>
 
           <button
             onClick={handlePayment}
             style={{background: 'linear-gradient(135deg, #c9a227, #f0d060)'}}
-            className="w-full mt-6 text-black font-bold py-4 rounded-full text-lg hover:opacity-90 transition-al
+            className="w-full mt-6 text-black font-bold py-4 rounded-full text-lg hover:opacity-90 transition-all"
+          >
+            Pay Now ₹299
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Cart
