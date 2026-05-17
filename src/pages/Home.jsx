@@ -8,7 +8,7 @@ const featuredProducts = [
     phone: "iPhone 13 / 14 / 15",
     price: 449,
     originalPrice: 699,
-    image: "https://m.media-amazon.com/images/I/71Q5KCQBQ6L._AC_SX466_.jpg",
+    image: "https://images.pexels.com/photos/1510659/pexels-photo-1510659.jpeg?w=400",
     tag: "🔥 Bestseller"
   },
   {
@@ -17,7 +17,7 @@ const featuredProducts = [
     phone: "Samsung Galaxy S23 / S24",
     price: 299,
     originalPrice: 499,
-    image: "https://m.media-amazon.com/images/I/71tpj2KVOSL._AC_SX466_.jpg",
+    image: "https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?w=400",
     tag: "😍 Fan Favourite"
   },
   {
@@ -26,7 +26,7 @@ const featuredProducts = [
     phone: "iPhone 14 / 15 Pro",
     price: 349,
     originalPrice: 549,
-    image: "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SX466_.jpg",
+    image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?w=400",
     tag: "✨ Trending"
   },
   {
@@ -35,7 +35,7 @@ const featuredProducts = [
     phone: "iPhone & Samsung All Models",
     price: 299,
     originalPrice: 499,
-    image: "https://m.media-amazon.com/images/I/71Q5KCQBQ6L._AC_SX466_.jpg",
+    image: "https://images.pexels.com/photos/1458671/pexels-photo-1458671.jpeg?w=400",
     tag: "🌸 Girls Special"
   },
 ]
