@@ -5,38 +5,38 @@ const featuredProducts = [
   {
     id: 1,
     name: "Black Bow Aesthetic Case",
-    phone: "iPhone 13",
+    phone: "iPhone 13 / 14 / 15",
     price: 449,
     originalPrice: 699,
-    image:"https://i.ibb.co/23TD2Zgj",,
+    image: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400",
     tag: "🔥 Bestseller"
   },
   {
     id: 2,
-    name: "Tom & Jerry Cartoon Case",
-    phone: "Samsung Galaxy",
-    price: 299,
-    originalPrice: 499,
-    image:"https://i.ibb.co/VWq79d1W",
-    tag: "😍 Fan Favourite"
+    name: "Floral Garden Case",
+    phone: "iPhone 12 / 13 / 14",
+    price: 399,
+    originalPrice: 599,
+    image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400",
+    tag: "🌸 Girls Favourite"
   },
   {
     id: 3,
-    name: "Coffee Cartoon 3D Case",
-    phone: "Oppo K13 5G",
+    name: "Matte Black Armour Case",
+    phone: "Samsung Galaxy S23 / S24",
     price: 349,
     originalPrice: 549,
-    image:"https://i.ibb.co/jPQSNQnp",",
-    tag: "✨ Trending"
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+    tag: "💪 Heavy Duty"
   },
   {
     id: 4,
-    name: "Coffee 3D Protection Case",
-    phone: "Samsung Galaxy M30S",
-    price: 349,
-    originalPrice: 549,
-    image:"https://i.ibb.co/ZzL2F2WK",
-    tag: "💪 Full Protection"
+    name: "Aesthetic Marble Case",
+    phone: "Samsung Galaxy A54 / A55",
+    price: 299,
+    originalPrice: 499,
+    image: "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=400",
+    tag: "✨ Trending"
   },
 ]
 

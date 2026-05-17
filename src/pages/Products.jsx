@@ -1,41 +1,115 @@
 import ProductCard from '../components/ProductCard'
 
 const allProducts = [
+  // iPhone Cases
   {
     id: 1,
     name: "Black Bow Aesthetic Case",
-    phone: "iPhone 13",
+    phone: "iPhone 13 / 14 / 15",
     price: 449,
     originalPrice: 699,
-    image: "https://i.ibb.co/23TD2Zgj",
+    image: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400",
     tag: "🔥 Bestseller"
   },
   {
     id: 2,
-    name: "Tom & Jerry Cartoon Case",
-    phone: "Samsung Galaxy",
-    price: 299,
-    originalPrice: 499,
-    image: "https://i.ibb.co/VWq79d1W",
-    tag: "😍 Fan Favourite"
+    name: "Floral Garden Case",
+    phone: "iPhone 12 / 13 / 14",
+    price: 399,
+    originalPrice: 599,
+    image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400",
+    tag: "🌸 Girls Favourite"
   },
   {
     id: 3,
-    name: "Coffee Cartoon 3D Case",
-    phone: "Oppo K13 5G",
-    price: 349,
-    originalPrice: 549,
-    image: "https://i.ibb.co/jPQSNQnp",
-    tag: "✨ Trending"
+    name: "Aesthetic Sunset Case",
+    phone: "iPhone 14 / 15 Pro",
+    price: 499,
+    originalPrice: 799,
+    image: "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=400",
+    tag: "🌅 Premium"
   },
   {
     id: 4,
-    name: "Coffee 3D Protection Case",
-    phone: "Samsung Galaxy M30S",
+    name: "Cute Pastel Case",
+    phone: "iPhone 11 / 12 / 13",
     price: 349,
     originalPrice: 549,
-    image: "https://i.ibb.co/ZzL2F2WK",
-    tag: "💪 Full Protection"
+    image: "https://images.unsplash.com/photo-1603313011108-a4b2f6756e97?w=400",
+    tag: "🎀 Cute"
+  },
+  {
+    id: 5,
+    name: "Minimalist Clear Case",
+    phone: "iPhone 13 / 14 / 15",
+    price: 299,
+    originalPrice: 499,
+    image: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400",
+    tag: "✨ Minimalist"
+  },
+  {
+    id: 6,
+    name: "Rose Gold Glitter Case",
+    phone: "iPhone 12 / 13 / 14",
+    price: 399,
+    originalPrice: 649,
+    image: "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=400",
+    tag: "💖 Glamorous"
+  },
+  // Samsung Cases
+  {
+    id: 7,
+    name: "Matte Black Armour Case",
+    phone: "Samsung Galaxy S23 / S24",
+    price: 349,
+    originalPrice: 549,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+    tag: "💪 Heavy Duty"
+  },
+  {
+    id: 8,
+    name: "Aesthetic Marble Case",
+    phone: "Samsung Galaxy A54 / A55",
+    price: 299,
+    originalPrice: 499,
+    image: "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=400",
+    tag: "✨ Trending"
+  },
+  {
+    id: 9,
+    name: "Floral Print Case",
+    phone: "Samsung Galaxy S22 / S23",
+    price: 349,
+    originalPrice: 549,
+    image: "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400",
+    tag: "🌸 Girls Special"
+  },
+  {
+    id: 10,
+    name: "Carbon Fibre Case",
+    phone: "Samsung Galaxy A34 / A54",
+    price: 299,
+    originalPrice: 499,
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+    tag: "🔥 Boys Special"
+  },
+  {
+    id: 11,
+    name: "Cute Cartoon Case",
+    phone: "Samsung Galaxy M34 / M54",
+    price: 249,
+    originalPrice: 449,
+    image: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400",
+    tag: "😍 Fan Favourite"
+  },
+  {
+    id: 12,
+    name: "Mirror Rose Gold Case",
+    phone: "Samsung Galaxy S21 / S22",
+    price: 399,
+    originalPrice: 649,
+    image: "https://images.unsplash.com/photo-1567581935884-3349723552ca?w=400",
+    tag: "💖 Premium"
   },
 ]
 
@@ -54,7 +128,7 @@ function Products() {
       {/* Filters */}
       <div className="max-w-6xl mx-auto px-4 py-6">
         <div className="flex gap-3 flex-wrap">
-          {["All", "For Girls", "For Boys", "iPhone", "Samsung", "Oppo", "Redmi"].map((filter) => (
+          {["All", "For Girls", "For Boys", "iPhone", "Samsung", "Trending", "Premium"].map((filter) => (
             <button
               key={filter}
               style={{background: '#1a1a1a', border: '1px solid #333', color: '#fff'}}
@@ -68,6 +142,7 @@ function Products() {
 
       {/* Products Grid */}
       <div className="max-w-6xl mx-auto px-4 pb-12">
+        <p className="text-gray-500 mb-6">{allProducts.length} products found</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {allProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
