@@ -4,35 +4,39 @@ import ProductCard from '../components/ProductCard'
 const featuredProducts = [
   {
     id: 1,
-    name: "Aesthetic Floral Case",
-    phone: "iPhone 14/15",
-    price: 199,
-    originalPrice: 399,
-    image: "https://images.unsplash.com/photo-1601593346740-925612772716?w=400"
+    name: "Black Bow Aesthetic Case",
+    phone: "iPhone 13",
+    price: 449,
+    originalPrice: 699,
+    image: "https://images.unsplash.com/photo-1601593346740-925612772716?w=400",
+    tag: "🔥 Bestseller"
   },
   {
     id: 2,
-    name: "Matte Black Armour Case",
-    phone: "Samsung Galaxy S23",
-    price: 249,
+    name: "Tom & Jerry Cartoon Case",
+    phone: "Samsung Galaxy",
+    price: 299,
     originalPrice: 499,
-    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400"
+    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400",
+    tag: "😍 Fan Favourite"
   },
   {
     id: 3,
-    name: "Cute Cartoon Case",
-    phone: "Redmi Note 12",
-    price: 149,
-    originalPrice: 299,
-    image: "https://images.unsplash.com/photo-1609252925602-e8f6982d8b20?w=400"
+    name: "Coffee Cartoon 3D Case",
+    phone: "Oppo K13 5G",
+    price: 349,
+    originalPrice: 549,
+    image: "https://images.unsplash.com/photo-1609252925602-e8f6982d8b20?w=400",
+    tag: "✨ Trending"
   },
   {
     id: 4,
-    name: "Transparent Glitter Case",
-    phone: "iPhone 13",
-    price: 179,
-    originalPrice: 349,
-    image: "https://images.unsplash.com/photo-1601593346740-925612772716?w=400"
+    name: "Coffee 3D Protection Case",
+    phone: "Samsung Galaxy M30S",
+    price: 349,
+    originalPrice: 549,
+    image: "https://images.unsplash.com/photo-1601593346740-925612772716?w=400",
+    tag: "💪 Full Protection"
   },
 ]
 
@@ -49,7 +53,7 @@ function Home() {
         <p style={{fontFamily: 'Raleway, sans-serif'}} className="text-xl mb-2 text-gray-300 font-light">
           Luxury Phone Covers for Girls & Boys
         </p>
-        <p className="text-lg mb-10 text-yellow-400">Starting at just ₹149</p>
+        <p className="text-lg mb-10 text-yellow-400">Starting at just ₹299</p>
         <Link to="/products">
           <button style={{background: 'linear-gradient(135deg, #c9a227, #f0d060)'}} className="text-black font-bold px-10 py-4 rounded-full text-lg hover:opacity-90 transition-all">
             Explore Collection →
